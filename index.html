@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NeuroSymbolic Cognitive Decline Analysis System</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>NeuroSymbolic Cognitive Decline Analysis System</h1>
+            <p class="subtitle">Research-Based AI for Studying Cognitive Impact of Long-term AI Usage</p>
+        </header>
+
+        <nav class="tabs">
+            <button class="tab-btn active" data-tab="dashboard">Dashboard</button>
+            <button class="tab-btn" data-tab="analysis">Interactive Analysis</button>
+            <button class="tab-btn" data-tab="research">Research Foundation</button>
+            <button class="tab-btn" data-tab="architecture">System Architecture</button>
+        </nav>
+
+        <!-- Dashboard Tab -->
+        <div id="dashboard" class="tab-content active">
+            <div class="overview-grid">
+                <div class="card overview-card">
+                    <div class="card__body">
+                        <h3>System Components</h3>
+                        <div class="stats-grid">
+                            <div class="stat">
+                                <span class="stat-number neural-color">14</span>
+                                <span class="stat-label">Cognitive Indicators</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-number symbolic-color">8</span>
+                                <span class="stat-label">Reasoning Rules</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-number">6</span>
+                                <span class="stat-label">Research Sources</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card__body">
+                        <h3>NeuroSymbolic Architecture</h3>
+                        <div class="architecture-preview">
+                            <div class="component neural-component">
+                                <h4>Neural Component</h4>
+                                <p>Pattern recognition and continuous assessment</p>
+                            </div>
+                            <div class="fusion-point">⚡</div>
+                            <div class="component symbolic-component">
+                                <h4>Symbolic Component</h4>
+                                <p>Rule-based reasoning and explainable decisions</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card__body">
+                        <h3>Research Impact</h3>
+                        <p>Based on <strong>6 peer-reviewed studies</strong> with over <strong>3,300 participants</strong>, this system demonstrates how NeuroSymbolic AI can assess cognitive decline risks from AI usage patterns.</p>
+                        <div class="key-findings">
+                            <div class="finding">
+                                <strong>98%</strong> prediction accuracy achieved
+                            </div>
+                            <div class="finding">
+                                <strong>83%</strong> of users showed memory retention issues
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Interactive Analysis Tab -->
+        <div id="analysis" class="tab-content">
+            <div class="analysis-grid">
+                <div class="controls-panel">
+                    <div class="card">
+                        <div class="card__body">
+                            <h3>Cognitive Indicators</h3>
+                            <div class="preset-buttons">
+                                <button class="btn btn--sm btn--outline" onclick="loadScenario('high')">High Risk</button>
+                                <button class="btn btn--sm btn--outline" onclick="loadScenario('moderate')">Moderate Risk</button>
+                                <button class="btn btn--sm btn--outline" onclick="loadScenario('low')">Low Risk</button>
+                            </div>
+                            
+                            <div class="slider-group">
+                                <label class="form-label">Cognitive Offloading: <span id="cognitive_offloading_val">0.5</span></label>
+                                <input type="range" id="cognitive_offloading" min="0" max="1" step="0.01" value="0.5" class="slider">
+                            </div>
+
+                            <div class="slider-group">
+                                <label class="form-label">Neural Activity: <span id="neural_activity_val">0.5</span></label>
+                                <input type="range" id="neural_activity" min="0" max="1" step="0.01" value="0.5" class="slider">
+                            </div>
+
+                            <div class="slider-group">
+                                <label class="form-label">Memory Retention: <span id="memory_retention_val">0.5</span></label>
+                                <input type="range" id="memory_retention" min="0" max="1" step="0.01" value="0.5" class="slider">
+                            </div>
+
+                            <div class="slider-group">
+                                <label class="form-label">Copy-Paste Behavior: <span id="copy_paste_behavior_val">0.5</span></label>
+                                <input type="range" id="copy_paste_behavior" min="0" max="1" step="0.01" value="0.5" class="slider">
+                            </div>
+
+                            <div class="slider-group">
+                                <label class="form-label">Analytical Engagement: <span id="analytical_engagement_val">0.5</span></label>
+                                <input type="range" id="analytical_engagement" min="0" max="1" step="0.01" value="0.5" class="slider">
+                            </div>
+
+                            <div class="slider-group">
+                                <label class="form-label">Reflection Time: <span id="reflection_time_val">0.5</span></label>
+                                <input type="range" id="reflection_time" min="0" max="1" step="0.01" value="0.5" class="slider">
+                            </div>
+
+                            <div class="slider-group">
+                                <label class="form-label">Verification Rate: <span id="verification_rate_val">0.5</span></label>
+                                <input type="range" id="verification_rate" min="0" max="1" step="0.01" value="0.5" class="slider">
+                            </div>
+
+                            <div class="slider-group">
+                                <label class="form-label">AI Dependence: <span id="ai_dependence_val">0.5</span></label>
+                                <input type="range" id="ai_dependence" min="0" max="1" step="0.01" value="0.5" class="slider">
+                            </div>
+
+                            <div class="slider-group">
+                                <label class="form-label">Engagement Metrics: <span id="engagement_metrics_val">0.5</span></label>
+                                <input type="range" id="engagement_metrics" min="0" max="1" step="0.01" value="0.5" class="slider">
+                            </div>
+
+                            <div class="slider-group">
+                                <label class="form-label">Problem Solving Decline: <span id="problem_solving_decline_val">0.5</span></label>
+                                <input type="range" id="problem_solving_decline" min="0" max="1" step="0.01" value="0.5" class="slider">
+                            </div>
+
+                            <div class="slider-group">
+                                <label class="form-label">Executive Function: <span id="executive_function_val">0.5</span></label>
+                                <input type="range" id="executive_function" min="0" max="1" step="0.01" value="0.5" class="slider">
+                            </div>
+
+                            <div class="slider-group">
+                                <label class="form-label">Attention Span: <span id="attention_span_val">0.5</span></label>
+                                <input type="range" id="attention_span" min="0" max="1" step="0.01" value="0.5" class="slider">
+                            </div>
+
+                            <div class="slider-group">
+                                <label class="form-label">Task Switching: <span id="task_switching_val">0.5</span></label>
+                                <input type="range" id="task_switching" min="0" max="1" step="0.01" value="0.5" class="slider">
+                            </div>
+
+                            <div class="slider-group">
+                                <label class="form-label">Temporal Usage (months): <span id="temporal_usage_months_val">12</span></label>
+                                <input type="range" id="temporal_usage_months" min="1" max="24" step="1" value="12" class="slider">
+                            </div>
+
+                            <div class="form-group">
+                                <label class="form-label">Usage Frequency:</label>
+                                <select id="usage_frequency" class="form-control">
+                                    <option value="low">Low</option>
+                                    <option value="medium" selected>Medium</option>
+                                    <option value="high">High</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="results-panel">
+                    <div class="card">
+                        <div class="card__body">
+                            <h3>NeuroSymbolic Assessment</h3>
+                            <div class="risk-display">
+                                <div class="risk-gauge-container">
+                                    <canvas id="riskGauge" width="200" height="200"></canvas>
+                                    <div class="risk-score-overlay">
+                                        <span id="riskScore">0.45</span>
+                                        <span class="risk-level" id="riskLevel">Moderate</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="assessment-breakdown">
+                                <div class="assessment-item neural-bg">
+                                    <h4>Neural Network Score</h4>
+                                    <span id="neuralScore">0.42</span>
+                                </div>
+                                <div class="assessment-item symbolic-bg">
+                                    <h4>Symbolic Rules Fired</h4>
+                                    <span id="rulesFired">3</span>
+                                </div>
+                            </div>
+
+                            <div class="contributing-factors">
+                                <h4>Top Contributing Factors</h4>
+                                <div id="topFactors"></div>
+                            </div>
+
+                            <div class="recommendations">
+                                <h4>Recommendations</h4>
+                                <div id="recommendationsList"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card__body">
+                            <h3>Rule Activations</h3>
+                            <div class="chart-container" style="height: 300px; position: relative;">
+                                <canvas id="rulesChart"></canvas>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card__body">
+                            <h3>Cognitive Profile</h3>
+                            <div class="chart-container" style="height: 400px; position: relative;">
+                                <canvas id="radarChart"></canvas>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Research Foundation Tab -->
+        <div id="research" class="tab-content">
+            <div class="card">
+                <div class="card__body">
+                    <h3>Research Foundation</h3>
+                    <p>This system is built upon comprehensive research from leading institutions studying the cognitive impacts of AI usage.</p>
+                    
+                    <div class="research-grid">
+                        <div class="research-item">
+                            <h4>MIT 2025: "Your Brain on ChatGPT"</h4>
+                            <p><strong>Finding:</strong> EEG scans showed diminished neural activity in ChatGPT users</p>
+                            <p><strong>Sample:</strong> 54 participants | <strong>Reliability:</strong> 90%</p>
+                        </div>
+                        
+                        <div class="research-item">
+                            <h4>SBS 2025: "AI Tools in Society"</h4>
+                            <p><strong>Finding:</strong> Random forest regression showed diminishing returns on critical thinking</p>
+                            <p><strong>Sample:</strong> 150 participants | <strong>Reliability:</strong> 85%</p>
+                        </div>
+                        
+                        <div class="research-item">
+                            <h4>PMC 2024: "Effects of generative AI on cognitive effort"</h4>
+                            <p><strong>Finding:</strong> Cognitive offloading as primary driver of decline</p>
+                            <p><strong>Sample:</strong> 89 participants | <strong>Reliability:</strong> 80%</p>
+                        </div>
+                        
+                        <div class="research-item">
+                            <h4>Nature 2024: "Multimodal deep learning for cognitive decline prediction"</h4>
+                            <p><strong>Finding:</strong> AI models achieved 98% accuracy in prediction</p>
+                            <p><strong>Sample:</strong> 2,688 participants | <strong>Reliability:</strong> 95%</p>
+                        </div>
+                        
+                        <div class="research-item">
+                            <h4>Gerlich 2025: "Increased AI use linked to eroding critical thinking skills"</h4>
+                            <p><strong>Finding:</strong> Threshold effect beyond which cognitive engagement declines</p>
+                            <p><strong>Sample:</strong> 120 participants | <strong>Reliability:</strong> 80%</p>
+                        </div>
+                        
+                        <div class="research-item">
+                            <h4>Polytechnique 2025: "Generative AI: the risk of cognitive atrophy"</h4>
+                            <p><strong>Finding:</strong> 83% of AI users unable to remember passages they wrote</p>
+                            <p><strong>Sample:</strong> 200 participants | <strong>Reliability:</strong> 75%</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- System Architecture Tab -->
+        <div id="architecture" class="tab-content">
+            <div class="card">
+                <div class="card__body">
+                    <h3>NeuroSymbolic Architecture</h3>
+                    <p>Our system combines the pattern recognition capabilities of neural networks with the explainable reasoning of symbolic AI.</p>
+                    
+                    <div class="architecture-detailed">
+                        <div class="arch-component neural-component">
+                            <h4>Neural Component</h4>
+                            <ul>
+                                <li>Continuous pattern analysis of cognitive indicators</li>
+                                <li>Non-linear relationship modeling</li>
+                                <li>Weighted assessment scoring</li>
+                                <li>Temporal pattern recognition</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="arch-component symbolic-component">
+                            <h4>Symbolic Component</h4>
+                            <ul>
+                                <li>Rule-based reasoning engine</li>
+                                <li>Explainable decision paths</li>
+                                <li>Threshold-based assessments</li>
+                                <li>Logical inference chains</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="arch-component fusion-component">
+                            <h4>Fusion Engine</h4>
+                            <ul>
+                                <li>Combines neural and symbolic outputs</li>
+                                <li>Confidence-weighted reasoning</li>
+                                <li>Explainable AI features</li>
+                                <li>Risk assessment integration</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <h4>NeuroSymbolic Rules</h4>
+                    <div class="rules-list">
+                        <div class="rule-item">
+                            <strong>NS001:</strong> If cognitive_offloading > 0.7 AND usage_frequency = high THEN cognitive_decline_risk = high
+                        </div>
+                        <div class="rule-item">
+                            <strong>NS002:</strong> If neural_activity < 0.3 AND memory_retention < 0.4 THEN severe_decline_risk = true
+                        </div>
+                        <div class="rule-item">
+                            <strong>NS003:</strong> If copy_paste_behavior > 0.8 THEN analytical_engagement = low
+                        </div>
+                        <div class="rule-item">
+                            <strong>NS004:</strong> If reflection_time < 0.2 AND verification_rate < 0.3 THEN critical_thinking_decline = high
+                        </div>
+                        <div class="rule-item">
+                            <strong>NS005:</strong> If ai_dependence > 0.9 THEN cognitive_atrophy_risk = severe
+                        </div>
+                        <div class="rule-item">
+                            <strong>NS006:</strong> If engagement_metrics < 0.4 AND temporal_usage > 6_months THEN long_term_decline = probable
+                        </div>
+                        <div class="rule-item">
+                            <strong>NS007:</strong> If problem_solving_decline > 0.7 AND executive_function < 0.5 THEN metacognitive_impairment = high
+                        </div>
+                        <div class="rule-item">
+                            <strong>NS008:</strong> If attention_span < 0.3 AND task_switching > 0.8 THEN focus_degradation = severe
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

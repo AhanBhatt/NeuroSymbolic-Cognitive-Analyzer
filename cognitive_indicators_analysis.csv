@@ -1,0 +1,43 @@
+Scenario,Indicator,Value,Risk_Contribution
+High Risk User,Cognitive Offloading,0.85,0.425
+High Risk User,Neural Activity,0.25,0.125
+High Risk User,Memory Retention,0.35,0.175
+High Risk User,Copy Paste Behavior,0.9,0.45
+High Risk User,Analytical Engagement,0.2,0.1
+High Risk User,Reflection Time,0.1,0.05
+High Risk User,Verification Rate,0.15,0.075
+High Risk User,Ai Dependence,0.95,0.475
+High Risk User,Engagement Metrics,0.25,0.125
+High Risk User,Temporal Usage Months,1.0,0.5
+High Risk User,Problem Solving Decline,0.8,0.4
+High Risk User,Executive Function,0.4,0.2
+High Risk User,Attention Span,0.2,0.1
+High Risk User,Task Switching,0.9,0.45
+Moderate Risk User,Cognitive Offloading,0.55,0.275
+Moderate Risk User,Neural Activity,0.5,0.25
+Moderate Risk User,Memory Retention,0.6,0.3
+Moderate Risk User,Copy Paste Behavior,0.45,0.225
+Moderate Risk User,Analytical Engagement,0.55,0.275
+Moderate Risk User,Reflection Time,0.4,0.2
+Moderate Risk User,Verification Rate,0.5,0.25
+Moderate Risk User,Ai Dependence,0.6,0.3
+Moderate Risk User,Engagement Metrics,0.5,0.25
+Moderate Risk User,Temporal Usage Months,1.0,0.5
+Moderate Risk User,Problem Solving Decline,0.4,0.2
+Moderate Risk User,Executive Function,0.65,0.325
+Moderate Risk User,Attention Span,0.5,0.25
+Moderate Risk User,Task Switching,0.45,0.225
+Low Risk User,Cognitive Offloading,0.3,0.15
+Low Risk User,Neural Activity,0.8,0.4
+Low Risk User,Memory Retention,0.85,0.425
+Low Risk User,Copy Paste Behavior,0.2,0.1
+Low Risk User,Analytical Engagement,0.8,0.4
+Low Risk User,Reflection Time,0.7,0.35
+Low Risk User,Verification Rate,0.8,0.4
+Low Risk User,Ai Dependence,0.3,0.15
+Low Risk User,Engagement Metrics,0.75,0.375
+Low Risk User,Temporal Usage Months,1.0,0.5
+Low Risk User,Problem Solving Decline,0.2,0.1
+Low Risk User,Executive Function,0.85,0.425
+Low Risk User,Attention Span,0.8,0.4
+Low Risk User,Task Switching,0.25,0.125

@@ -1,0 +1,578 @@
+{
+  "summary": {
+    "system_overview": {
+      "total_indicators": 10,
+      "total_patterns": 10,
+      "total_rules": 8,
+      "research_sources": 6
+    },
+    "analysis_results": [
+      {
+        "scenario": "High Risk User",
+        "risk_score": 0.67425,
+        "risk_level": "high",
+        "rules_fired": 6,
+        "neural_risk": 0.27724137931034487,
+        "recommendations_count": 4,
+        "confidence": 0.2
+      },
+      {
+        "scenario": "Moderate Risk User",
+        "risk_score": 0.20025,
+        "risk_level": "low",
+        "rules_fired": 6,
+        "neural_risk": 0.18086206896551724,
+        "recommendations_count": 3,
+        "confidence": 0.2
+      },
+      {
+        "scenario": "Low Risk User",
+        "risk_score": 0.10149999999999999,
+        "risk_level": "minimal",
+        "rules_fired": 6,
+        "neural_risk": 0.2135632183908046,
+        "recommendations_count": 3,
+        "confidence": 0.2
+      }
+    ]
+  },
+  "detailed_results": [
+    {
+      "overall_risk_score": 0.67425,
+      "risk_level": "high",
+      "neural_assessment": {
+        "features": {
+          "cognitive_offloading_normalized": 0.85,
+          "cognitive_offloading_trend": 0.0,
+          "usage_frequency_categorical": 0.74,
+          "neural_activity_normalized": 0.25,
+          "neural_activity_trend": 0.0,
+          "memory_retention_normalized": 0.35,
+          "memory_retention_trend": 0.0,
+          "copy_paste_behavior_normalized": 0.9,
+          "copy_paste_behavior_trend": 0.0,
+          "analytical_engagement_normalized": 0.2,
+          "analytical_engagement_trend": 0.0,
+          "reflection_time_normalized": 0.1,
+          "reflection_time_trend": 0.0,
+          "verification_rate_normalized": 0.15,
+          "verification_rate_trend": 0.0,
+          "ai_dependence_normalized": 0.95,
+          "ai_dependence_trend": 0.0,
+          "engagement_metrics_normalized": 0.25,
+          "engagement_metrics_trend": 0.0,
+          "temporal_usage_months_normalized": 1,
+          "temporal_usage_months_trend": 0.0,
+          "problem_solving_decline_normalized": 0.8,
+          "problem_solving_decline_trend": 0.0,
+          "executive_function_normalized": 0.4,
+          "executive_function_trend": 0.0,
+          "attention_span_normalized": 0.2,
+          "attention_span_trend": 0.0,
+          "task_switching_normalized": 0.9,
+          "task_switching_trend": 0.0
+        },
+        "predicted_risk": 0.27724137931034487
+      },
+      "symbolic_assessment": {
+        "fired_rules": 6,
+        "conclusions": {
+          "cognitive_decline_risk": 0.8,
+          "severe_decline_risk": 0.5,
+          "analytical_engagement": 0.2,
+          "cognitive_atrophy_risk": 0.5,
+          "metacognitive_impairment": 0.8,
+          "focus_degradation": 0.5
+        }
+      },
+      "detailed_assessment": {
+        "overall_risk": 0.67425,
+        "risk_components": [
+          [
+            "symbolic",
+            0.32999999999999996
+          ],
+          [
+            "indicators",
+            0.19124999999999998
+          ],
+          [
+            "patterns",
+            0.15300000000000002
+          ]
+        ],
+        "indicator_scores": {
+          "cognitive_offloading": 0.6375
+        },
+        "pattern_risks": {
+          "copy_paste_behavior": 0.765
+        },
+        "neural_contribution": 0.4,
+        "symbolic_contribution": 0.6
+      },
+      "explanation": {
+        "summary": "Analysis indicates high risk of cognitive decline due to AI usage patterns.",
+        "key_factors": [
+          "Symbolic component contributed 0.33 to overall risk"
+        ],
+        "reasoning_process": [
+          {
+            "rule": "NS002",
+            "strength": 1.0,
+            "conclusion": {
+              "severe_decline_risk": "true"
+            }
+          },
+          {
+            "rule": "NS003",
+            "strength": 1.0,
+            "conclusion": {
+              "analytical_engagement": "low"
+            }
+          },
+          {
+            "rule": "NS005",
+            "strength": 1.0,
+            "conclusion": {
+              "cognitive_atrophy_risk": "severe"
+            }
+          },
+          {
+            "rule": "NS007",
+            "strength": 1.0,
+            "conclusion": {
+              "metacognitive_impairment": "high"
+            }
+          },
+          {
+            "rule": "NS008",
+            "strength": 1.0,
+            "conclusion": {
+              "focus_degradation": "severe"
+            }
+          }
+        ],
+        "confidence_level": 0.2
+      },
+      "recommendations": [
+        "Balance AI assistance with independent problem-solving",
+        "Practice verification of AI-generated content",
+        "Engage in reflective thinking exercises",
+        "Monitor usage patterns regularly"
+      ],
+      "inference_trace": [
+        {
+          "rule_id": "NS001",
+          "activation_strength": 1.0,
+          "conditions_met": 2,
+          "total_conditions": 2,
+          "conclusion": {
+            "cognitive_decline_risk": "high"
+          },
+          "timestamp": "2025-09-07 22:28:05.241076"
+        },
+        {
+          "rule_id": "NS002",
+          "activation_strength": 1.0,
+          "conditions_met": 2,
+          "total_conditions": 2,
+          "conclusion": {
+            "severe_decline_risk": "true"
+          },
+          "timestamp": "2025-09-07 22:28:05.241963"
+        },
+        {
+          "rule_id": "NS003",
+          "activation_strength": 1.0,
+          "conditions_met": 1,
+          "total_conditions": 1,
+          "conclusion": {
+            "analytical_engagement": "low"
+          },
+          "timestamp": "2025-09-07 22:28:05.242688"
+        },
+        {
+          "rule_id": "NS005",
+          "activation_strength": 1.0,
+          "conditions_met": 1,
+          "total_conditions": 1,
+          "conclusion": {
+            "cognitive_atrophy_risk": "severe"
+          },
+          "timestamp": "2025-09-07 22:28:05.243542"
+        },
+        {
+          "rule_id": "NS007",
+          "activation_strength": 1.0,
+          "conditions_met": 2,
+          "total_conditions": 2,
+          "conclusion": {
+            "metacognitive_impairment": "high"
+          },
+          "timestamp": "2025-09-07 22:28:05.244095"
+        },
+        {
+          "rule_id": "NS008",
+          "activation_strength": 1.0,
+          "conditions_met": 2,
+          "total_conditions": 2,
+          "conclusion": {
+            "focus_degradation": "severe"
+          },
+          "timestamp": "2025-09-07 22:28:05.244665"
+        }
+      ],
+      "timestamp": "2025-09-07T22:28:05.245583",
+      "scenario_name": "High Risk User"
+    },
+    {
+      "overall_risk_score": 0.20025,
+      "risk_level": "low",
+      "neural_assessment": {
+        "features": {
+          "cognitive_offloading_normalized": 0.55,
+          "cognitive_offloading_trend": -0.14999999999999997,
+          "usage_frequency_categorical": 0.42,
+          "neural_activity_normalized": 0.5,
+          "neural_activity_trend": 0.125,
+          "memory_retention_normalized": 0.6,
+          "memory_retention_trend": 0.125,
+          "copy_paste_behavior_normalized": 0.45,
+          "copy_paste_behavior_trend": -0.225,
+          "analytical_engagement_normalized": 0.55,
+          "analytical_engagement_trend": 0.17500000000000002,
+          "reflection_time_normalized": 0.4,
+          "reflection_time_trend": 0.15000000000000002,
+          "verification_rate_normalized": 0.5,
+          "verification_rate_trend": 0.175,
+          "ai_dependence_normalized": 0.6,
+          "ai_dependence_trend": -0.175,
+          "engagement_metrics_normalized": 0.5,
+          "engagement_metrics_trend": 0.125,
+          "temporal_usage_months_normalized": 1,
+          "temporal_usage_months_trend": -3.0,
+          "problem_solving_decline_normalized": 0.4,
+          "problem_solving_decline_trend": -0.2,
+          "executive_function_normalized": 0.65,
+          "executive_function_trend": 0.125,
+          "attention_span_normalized": 0.5,
+          "attention_span_trend": 0.15,
+          "task_switching_normalized": 0.45,
+          "task_switching_trend": -0.225
+        },
+        "predicted_risk": 0.18086206896551724
+      },
+      "symbolic_assessment": {
+        "fired_rules": 6,
+        "conclusions": {}
+      },
+      "detailed_assessment": {
+        "overall_risk": 0.20025,
+        "risk_components": [
+          [
+            "indicators",
+            0.12375
+          ],
+          [
+            "patterns",
+            0.07650000000000001
+          ]
+        ],
+        "indicator_scores": {
+          "cognitive_offloading": 0.41250000000000003
+        },
+        "pattern_risks": {
+          "copy_paste_behavior": 0.3825
+        },
+        "neural_contribution": 0.4,
+        "symbolic_contribution": 0.6
+      },
+      "explanation": {
+        "summary": "Analysis indicates low risk of cognitive decline due to AI usage patterns.",
+        "key_factors": [],
+        "reasoning_process": [
+          {
+            "rule": "NS002",
+            "strength": 1.0,
+            "conclusion": {
+              "severe_decline_risk": "true"
+            }
+          },
+          {
+            "rule": "NS003",
+            "strength": 1.0,
+            "conclusion": {
+              "analytical_engagement": "low"
+            }
+          },
+          {
+            "rule": "NS005",
+            "strength": 1.0,
+            "conclusion": {
+              "cognitive_atrophy_risk": "severe"
+            }
+          },
+          {
+            "rule": "NS007",
+            "strength": 1.0,
+            "conclusion": {
+              "metacognitive_impairment": "high"
+            }
+          },
+          {
+            "rule": "NS008",
+            "strength": 1.0,
+            "conclusion": {
+              "focus_degradation": "severe"
+            }
+          }
+        ],
+        "confidence_level": 0.2
+      },
+      "recommendations": [
+        "Continue current balanced usage patterns",
+        "Maintain awareness of cognitive engagement levels",
+        "Regular self-assessment of thinking skills"
+      ],
+      "inference_trace": [
+        {
+          "rule_id": "NS001",
+          "activation_strength": 1.0,
+          "conditions_met": 2,
+          "total_conditions": 2,
+          "conclusion": {
+            "cognitive_decline_risk": "high"
+          },
+          "timestamp": "2025-09-07 22:28:05.241076"
+        },
+        {
+          "rule_id": "NS002",
+          "activation_strength": 1.0,
+          "conditions_met": 2,
+          "total_conditions": 2,
+          "conclusion": {
+            "severe_decline_risk": "true"
+          },
+          "timestamp": "2025-09-07 22:28:05.241963"
+        },
+        {
+          "rule_id": "NS003",
+          "activation_strength": 1.0,
+          "conditions_met": 1,
+          "total_conditions": 1,
+          "conclusion": {
+            "analytical_engagement": "low"
+          },
+          "timestamp": "2025-09-07 22:28:05.242688"
+        },
+        {
+          "rule_id": "NS005",
+          "activation_strength": 1.0,
+          "conditions_met": 1,
+          "total_conditions": 1,
+          "conclusion": {
+            "cognitive_atrophy_risk": "severe"
+          },
+          "timestamp": "2025-09-07 22:28:05.243542"
+        },
+        {
+          "rule_id": "NS007",
+          "activation_strength": 1.0,
+          "conditions_met": 2,
+          "total_conditions": 2,
+          "conclusion": {
+            "metacognitive_impairment": "high"
+          },
+          "timestamp": "2025-09-07 22:28:05.244095"
+        },
+        {
+          "rule_id": "NS008",
+          "activation_strength": 1.0,
+          "conditions_met": 2,
+          "total_conditions": 2,
+          "conclusion": {
+            "focus_degradation": "severe"
+          },
+          "timestamp": "2025-09-07 22:28:05.244665"
+        }
+      ],
+      "timestamp": "2025-09-07T22:28:05.246626",
+      "scenario_name": "Moderate Risk User"
+    },
+    {
+      "overall_risk_score": 0.10149999999999999,
+      "risk_level": "minimal",
+      "neural_assessment": {
+        "features": {
+          "cognitive_offloading_normalized": 0.3,
+          "cognitive_offloading_trend": -0.18333333333333335,
+          "usage_frequency_categorical": 0.16,
+          "neural_activity_normalized": 0.8,
+          "neural_activity_trend": 0.18333333333333335,
+          "memory_retention_normalized": 0.85,
+          "memory_retention_trend": 0.16666666666666666,
+          "copy_paste_behavior_normalized": 0.2,
+          "copy_paste_behavior_trend": -0.2333333333333333,
+          "analytical_engagement_normalized": 0.8,
+          "analytical_engagement_trend": 0.20000000000000004,
+          "reflection_time_normalized": 0.7,
+          "reflection_time_trend": 0.19999999999999998,
+          "verification_rate_normalized": 0.8,
+          "verification_rate_trend": 0.21666666666666667,
+          "ai_dependence_normalized": 0.3,
+          "ai_dependence_trend": -0.21666666666666665,
+          "engagement_metrics_normalized": 0.75,
+          "engagement_metrics_trend": 0.16666666666666666,
+          "temporal_usage_months_normalized": 1,
+          "temporal_usage_months_trend": -3.0,
+          "problem_solving_decline_normalized": 0.2,
+          "problem_solving_decline_trend": -0.20000000000000004,
+          "executive_function_normalized": 0.85,
+          "executive_function_trend": 0.15,
+          "attention_span_normalized": 0.8,
+          "attention_span_trend": 0.20000000000000004,
+          "task_switching_normalized": 0.25,
+          "task_switching_trend": -0.21666666666666667
+        },
+        "predicted_risk": 0.2135632183908046
+      },
+      "symbolic_assessment": {
+        "fired_rules": 6,
+        "conclusions": {}
+      },
+      "detailed_assessment": {
+        "overall_risk": 0.10149999999999999,
+        "risk_components": [
+          [
+            "indicators",
+            0.06749999999999999
+          ],
+          [
+            "patterns",
+            0.034
+          ]
+        ],
+        "indicator_scores": {
+          "cognitive_offloading": 0.22499999999999998
+        },
+        "pattern_risks": {
+          "copy_paste_behavior": 0.17
+        },
+        "neural_contribution": 0.4,
+        "symbolic_contribution": 0.6
+      },
+      "explanation": {
+        "summary": "Analysis indicates minimal risk of cognitive decline due to AI usage patterns.",
+        "key_factors": [],
+        "reasoning_process": [
+          {
+            "rule": "NS002",
+            "strength": 1.0,
+            "conclusion": {
+              "severe_decline_risk": "true"
+            }
+          },
+          {
+            "rule": "NS003",
+            "strength": 1.0,
+            "conclusion": {
+              "analytical_engagement": "low"
+            }
+          },
+          {
+            "rule": "NS005",
+            "strength": 1.0,
+            "conclusion": {
+              "cognitive_atrophy_risk": "severe"
+            }
+          },
+          {
+            "rule": "NS007",
+            "strength": 1.0,
+            "conclusion": {
+              "metacognitive_impairment": "high"
+            }
+          },
+          {
+            "rule": "NS008",
+            "strength": 1.0,
+            "conclusion": {
+              "focus_degradation": "severe"
+            }
+          }
+        ],
+        "confidence_level": 0.2
+      },
+      "recommendations": [
+        "Continue current balanced usage patterns",
+        "Maintain awareness of cognitive engagement levels",
+        "Regular self-assessment of thinking skills"
+      ],
+      "inference_trace": [
+        {
+          "rule_id": "NS001",
+          "activation_strength": 1.0,
+          "conditions_met": 2,
+          "total_conditions": 2,
+          "conclusion": {
+            "cognitive_decline_risk": "high"
+          },
+          "timestamp": "2025-09-07 22:28:05.241076"
+        },
+        {
+          "rule_id": "NS002",
+          "activation_strength": 1.0,
+          "conditions_met": 2,
+          "total_conditions": 2,
+          "conclusion": {
+            "severe_decline_risk": "true"
+          },
+          "timestamp": "2025-09-07 22:28:05.241963"
+        },
+        {
+          "rule_id": "NS003",
+          "activation_strength": 1.0,
+          "conditions_met": 1,
+          "total_conditions": 1,
+          "conclusion": {
+            "analytical_engagement": "low"
+          },
+          "timestamp": "2025-09-07 22:28:05.242688"
+        },
+        {
+          "rule_id": "NS005",
+          "activation_strength": 1.0,
+          "conditions_met": 1,
+          "total_conditions": 1,
+          "conclusion": {
+            "cognitive_atrophy_risk": "severe"
+          },
+          "timestamp": "2025-09-07 22:28:05.243542"
+        },
+        {
+          "rule_id": "NS007",
+          "activation_strength": 1.0,
+          "conditions_met": 2,
+          "total_conditions": 2,
+          "conclusion": {
+            "metacognitive_impairment": "high"
+          },
+          "timestamp": "2025-09-07 22:28:05.244095"
+        },
+        {
+          "rule_id": "NS008",
+          "activation_strength": 1.0,
+          "conditions_met": 2,
+          "total_conditions": 2,
+          "conclusion": {
+            "focus_degradation": "severe"
+          },
+          "timestamp": "2025-09-07 22:28:05.244665"
+        }
+      ],
+      "timestamp": "2025-09-07T22:28:05.247689",
+      "scenario_name": "Low Risk User"
+    }
+  ],
+  "timestamp": "2025-09-07T22:28:51.037034"
+}

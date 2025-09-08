@@ -1,0 +1,19 @@
+Scenario,Rule_ID,Activation_Strength,Conditions_Met,Total_Conditions,Effectiveness_Ratio
+High Risk User,NS001,1.0,2,2,1.0
+High Risk User,NS002,1.0,2,2,1.0
+High Risk User,NS003,1.0,1,1,1.0
+High Risk User,NS005,1.0,1,1,1.0
+High Risk User,NS007,1.0,2,2,1.0
+High Risk User,NS008,1.0,2,2,1.0
+Moderate Risk User,NS001,1.0,2,2,1.0
+Moderate Risk User,NS002,1.0,2,2,1.0
+Moderate Risk User,NS003,1.0,1,1,1.0
+Moderate Risk User,NS005,1.0,1,1,1.0
+Moderate Risk User,NS007,1.0,2,2,1.0
+Moderate Risk User,NS008,1.0,2,2,1.0
+Low Risk User,NS001,1.0,2,2,1.0
+Low Risk User,NS002,1.0,2,2,1.0
+Low Risk User,NS003,1.0,1,1,1.0
+Low Risk User,NS005,1.0,1,1,1.0
+Low Risk User,NS007,1.0,2,2,1.0
+Low Risk User,NS008,1.0,2,2,1.0

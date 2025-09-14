@@ -36,7 +36,6 @@ The system was tested on three scenarios with different risk profiles:
 
 ### Technical Implementation:
 - **Language**: Python with pandas, numpy
-- **Configuration**: Excel-based (no hardcoded parameters)
 - **Logic Engine**: Fuzzy logic with temporal reasoning
 - **Rule Format**: Natural language with automated parsing
 - **Output**: Structured JSON with full traceability

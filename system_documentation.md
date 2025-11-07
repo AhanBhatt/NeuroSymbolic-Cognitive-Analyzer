@@ -35,7 +35,6 @@ The system was tested on three scenarios with different risk profiles:
 - **Low Risk**: Score 0.101, preventive recommendations
 
 ### Technical Implementation:
-- **Language**: Python with pandas, numpy
 - **Logic Engine**: Fuzzy logic with temporal reasoning
 - **Rule Format**: Natural language with automated parsing
 - **Output**: Structured JSON with full traceability

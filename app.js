@@ -1,6 +1,4 @@
-// NeuroSymbolic Cognitive Decline Analysis System JavaScript
 
-// System data from research
 const cognitiveIndicators = [
     {name: "reduced_brain_connectivity", weight: 0.9, category: "neurological", source: "MIT_ChatGPT_2025"},
     {name: "lower_memory_retention", weight: 0.85, category: "neurological", source: "MIT_ChatGPT_2025"},
